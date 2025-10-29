@@ -236,7 +236,7 @@ public class SmolVLMProcessor: UserInputProcessor {
             }
 
             // Unfortunately we don't have a "render" option in Tokenizers yet, so decoding
-            let promptTokens = try tokenizer.applyChatTemplate(messages: messages)
+            let promptTokens = try tokenizer.applyChatTemplate(messages: messages, tools: input.tools)
             let decoded = try tokenizer.decode(tokens: promptTokens, skipSpecialTokens: false)
 
             let image = try input.images[0].asCIImage().toSRGB()

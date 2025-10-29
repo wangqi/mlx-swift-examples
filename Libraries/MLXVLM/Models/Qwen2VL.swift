@@ -571,7 +571,7 @@ public class Qwen2VLProcessor: UserInputProcessor {
     public func prepare(input: UserInput) async throws -> LMInput {
         let messages = Qwen2VLMessageGenerator().generate(from: input)
 
-        var promptTokens = try tokenizer.applyChatTemplate(messages: messages)
+        var promptTokens = try tokenizer.applyChatTemplate(messages: messages, tools: input.tools)
 
         // Text-only input
         if input.images.isEmpty, input.videos.isEmpty {
