@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1630"
+   LastUpgradeVersion = "2620"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C3132C222DFB2FFB00270E8E"
-               BuildableName = "ExampleLLM"
-               BlueprintName = "ExampleLLM"
+               BlueprintIdentifier = "0F5AD7402DB70C0300745C06"
+               BuildableName = "MLXChatExample.app"
+               BlueprintName = "MLXChatExample"
                ReferencedContainer = "container:mlx-swift-examples.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -31,7 +31,7 @@
       shouldAutocreateTestPlan = "YES">
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -39,15 +39,14 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "YES"
-      viewDebuggingEnabled = "No">
+      allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C3132C222DFB2FFB00270E8E"
-            BuildableName = "ExampleLLM"
-            BlueprintName = "ExampleLLM"
+            BlueprintIdentifier = "0F5AD7402DB70C0300745C06"
+            BuildableName = "MLXChatExample.app"
+            BlueprintName = "MLXChatExample"
             ReferencedContainer = "container:mlx-swift-examples.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,9 +61,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C3132C222DFB2FFB00270E8E"
-            BuildableName = "ExampleLLM"
-            BlueprintName = "ExampleLLM"
+            BlueprintIdentifier = "0F5AD7402DB70C0300745C06"
+            BuildableName = "MLXChatExample.app"
+            BlueprintName = "MLXChatExample"
             ReferencedContainer = "container:mlx-swift-examples.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
