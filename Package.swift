@@ -15,7 +15,7 @@ let package = Package(
             targets: ["StableDiffusion"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ml-explore/mlx-swift", .upToNextMinor(from: "0.30.2")),
+        .package(url: "https://github.com/ml-explore/mlx-swift", .upToNextMinor(from: "0.30.3")),
         .package(
             url: "https://github.com/huggingface/swift-transformers",
             .upToNextMinor(from: "1.1.0")
@@ -29,6 +29,7 @@ let package = Package(
                 .product(name: "MLX", package: "mlx-swift"),
                 .product(name: "MLXNN", package: "mlx-swift"),
                 .product(name: "MLXOptimizers", package: "mlx-swift"),
+                .product(name: "MLXRandom", package: "mlx-swift"),
                 .product(name: "Transformers", package: "swift-transformers"),
                 .product(name: "Gzip", package: "GzipSwift"),
             ],
