@@ -8,7 +8,7 @@ let package = Package(
     // upgraded iOS minimum to 17 to be compatible with swift-transformers 1.2.0 which transitively
     // requires swift-huggingface (iOS 17+); safe since the app requires iOS 18.6+
     // wangqi modified 2026-03-15
-    platforms: [.macOS(.v14), .iOS(.v17)],
+    platforms: [.macOS(.v14), .iOS(.v17), .tvOS(.v17)],
     products: [
         .library(
             name: "MLXMNIST",
@@ -32,10 +32,10 @@ let package = Package(
             name: "MLXMNIST",
             dependencies: [
                 .product(name: "MLX", package: "mlx-swift"),
-                .product(name: "MLXFast", package: "mlx-swift"),
                 .product(name: "MLXNN", package: "mlx-swift"),
                 .product(name: "MLXOptimizers", package: "mlx-swift"),
                 .product(name: "MLXRandom", package: "mlx-swift"),
+                .product(name: "Transformers", package: "swift-transformers"),
                 .product(name: "Gzip", package: "GzipSwift"),
             ],
             path: "Libraries/MLXMNIST",
@@ -51,7 +51,6 @@ let package = Package(
             dependencies: [
                 .product(name: "MLX", package: "mlx-swift"),
                 .product(name: "MLXNN", package: "mlx-swift"),
-                .product(name: "MLXRandom", package: "mlx-swift"),
                 .product(name: "Transformers", package: "swift-transformers"),
             ],
             path: "Libraries/StableDiffusion",
