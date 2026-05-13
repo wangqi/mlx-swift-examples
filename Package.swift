@@ -5,7 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "mlx-libraries",
-    platforms: [.macOS(.v14), .iOS(.v16)],
+    // upgraded iOS minimum to 17 to be compatible with swift-transformers 1.2.0 which transitively
+    // requires swift-huggingface (iOS 17+); safe since the app requires iOS 18.6+
+    // wangqi modified 2026-03-15
+    platforms: [.macOS(.v14), .iOS(.v17)],
     products: [
         .library(
             name: "MLXMNIST",
